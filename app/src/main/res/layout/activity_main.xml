@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/grad"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relSubmit"
+        android:background="@color/colorTitle"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Remind me"
+            android:id="@+id/remindText"
+            android:textSize="24sp"
+            android:textColor="#eceaea"
+            android:padding="9dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#00000000"
+            android:id="@+id/submit"
+            android:src="@drawable/submit"
+            android:textColor="#ece0e0"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editRel"
+        android:layout_below="@id/relSubmit"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editWarning"
+            android:layout_toLeftOf="@+id/editTitle"
+            android:layout_centerVertical="true"
+            android:src="@drawable/error"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTitle"
+            android:layout_centerInParent="true"
+            android:gravity="clip_vertical"
+            android:text=" Editing Your Reminder"
+            android:textSize="18dp"
+            android:textColor="#82dafd"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCancel"
+            android:src="@drawable/close"
+            android:background="#00ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_below="@id/editRel"
+        android:maxLines="2"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="When and What to Remind???"
+        android:background="@drawable/backbut"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textColor="#82dafd"
+        android:textColorHint="#82dafd"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/buttons"
+        android:weightSum="2"
+        android:layout_below="@id/text"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textTime"
+            android:hint="---Select Time---"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#82dafd"
+            android:textColorHint="#82dafd"
+            android:background="@drawable/backbut"
+            android:backgroundTint="#a421759b"
+            android:padding="7dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:src="@drawable/watch"
+            android:backgroundTint="#00000000"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textDate"
+            android:hint="--- Select Date --- "
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#82dafd"
+            android:textColorHint="#82dafd"
+            android:background="@drawable/backbut"
+            android:backgroundTint="#a421759b"
+            android:padding="7dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:src="@drawable/calender"
+            android:backgroundTint="#00000000"
+            android:padding="5dp"/></LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_below="@id/buttons"
+        android:layout_margin="15dp"> </ListView>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorBack"
+    android:padding="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/logo"
+        android:layout_above="@+id/quote"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBack"
+        android:src="@drawable/dont_forget"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quote"
+        android:layout_centerInParent="true"
+        android:text="We do not remember Days.\nWe remember Moments ..."
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:textColor="#a9dcf5"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CESARE PAVESE "
+        android:textColor="#a9dcf5"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic|bold"
+        android:id="@+id/quoter"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/quote"
+        android:gravity="right"/>
+</RelativeLayout>

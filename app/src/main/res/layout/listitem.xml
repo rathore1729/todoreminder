@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backbut"
+    android:backgroundTint="#43dafdfc"
+    android:padding="8dp">
+
+<TextView
+    android:layout_height="40dp"
+    android:layout_width="40dp"
+    android:id="@+id/textViewCh"
+    android:background="@drawable/circleback"
+    android:text="T"
+    android:textSize="25sp"
+    android:textColor="#e9e6e6"
+    android:gravity="center"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/textViewCh"
+    android:layout_toLeftOf="@+id/textViewTime">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTitle"
+        android:text="Title"
+        android:textSize="17sp"
+        android:textColor="#1a1919"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDate"
+        android:text="27/12/2017"
+        android:textSize="10sp"
+        android:textColor="#cccbcb"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginLeft="10dp"/></RelativeLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textViewTime"
+    android:text="12:23 PM"
+    android:textSize="10sp"
+    android:textColor="#cccbcb"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>
